@@ -1,0 +1,31 @@
+body{
+    width: 1500px;
+    align-items: center;
+}
+#heading{
+    text-align: center;
+}
+#flavours-row{
+    width: 1500px;
+}
+#card-body1{
+    width: 200px;
+}
+#card-body2{
+    width: 200px;
+}
+#card-body3{
+    width: 200px;
+}
+#card-body4{
+    width: 200px;
+}
+#card-body5{
+    width: 200px;
+}
+#card-body6{
+    width: 200px;
+}
+#result{
+    align-items: center;
+}
