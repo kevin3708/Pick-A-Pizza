@@ -17,16 +17,41 @@
             <div class="flavours">
             <h2>Flavours we have:</h2>
             <ol>
-                <li><input type="checkbox" name="Hawaiian" value=Hawaiian id="hawaiian">Hawaiian</li>
-                <li><input type="checkbox" name="Boerewors" value="Boerewors" id="boerewors">Boerewors</li>
-                <li><input type="checkbox" name="BBQ Steak" value="BBQ Steak"id="bbq">BBQ Steak</li>
-                <li><input type="checkbox" name="Peri-Peri Chicken" value="Peri-Peri Chicken" id="peri-peri">Peri-Peri Chicken</li>
-                <li><input type="checkbox" name="Chicken Tikka" value="Chicken Tikka" id="chicken-tikka">Chicken Tikka</li>
-                <li><input type="checkbox" name="Vegetable Tikka" value="Vegetable Tikka" id="veg-tikka">Vegetable Tikka</li>
+               <li>Hawaiian</li>
+                <li>Boerewors</li>
+                <li>BBQ Steak</li>
+                <li>Peri-Peri Chicken</li>
+                <li>Chicken Tikka</li>
+                <li>Vegetable Tikka</li>
             </ol>
+            <p>Fill in the forms below to specify which specific flavour(s) you'd like to order according to the order in which they are given above.</p>
+            <div class="form-group">
+                <label for="flavours">Flavor 1</label>
+                <input type="text" placeholder="Enter flavor 1" class="form-control" id="flavour1">
+            </div>
+            <div class="form-group">
+                <label for="flavours">Flavor 2</label>
+                <input type="text" placeholder="Enter flavor 2" class="form-control" id="flavour2">
+            </div>
+            <div class="form-group">
+                <label for="flavours">Flavor 3</label>
+                <input type="text" placeholder="Enter flavor 3" class="form-control" id="flavour3">
+            </div>
+            <div class="form-group">
+                <label for="flavours">Flavor 4</label>
+                <input type="text" placeholder="Enter flavor 4" class="form-control" id="flavour4">
+            </div>
+            <div class="form-group">
+                <label for="flavours">Flavor 5</label>
+                <input type="text" placeholder="Enter flavor 5" class="form-control" id="flavour5">
+            </div>
+            <div class="form-group">
+                <label for="flavours">Flavor 6</label>
+                <input type="text" placeholder="Enter flavor 6" class="form-control" id="flavour6">
+            </div>
             </div>
             <div class="row" id="flavours-row">
-                <div class="col-md-2">
+                <div class="col-md-2" id="hawaiianInfo">
                     <div class="card-info">
                         <div class="card-heading">
                             <h2 id="card-title1">Hawaiian</h2>
@@ -43,38 +68,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio1">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" id="crispyHawaiian">Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio1">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed" id="stuffedHawaiian"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio1">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free" id="glutenHawaiian">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio2">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small" id="smallHawaiian">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio2">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium" id="mediumHawaiian">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio2">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large" id="largeHawaiian">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -82,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="boereworsInfo">
                     <div class="card-info">
                         <div class="card-heading">
                             <h2 id="card-title1">Boerewors</h2>
@@ -98,38 +123,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio3">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" >Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio3">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio3">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio4">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio4">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio4">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -137,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" id="bbqInfo">
                     <div class="card-info">
                         <div class="card-heading">
                             <h2 id="card-title1">BBQ Steak</h2>
@@ -153,38 +178,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio5">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" >Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio5">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio5">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio6">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio6">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio6">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -208,38 +233,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio7">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" >Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio7">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio7">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio8">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio8">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio8">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -263,38 +288,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio9">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" >Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio9">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio9">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio10">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio10">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio10">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -318,38 +343,38 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <h3>Crust:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio11">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Crispy" >Crispy
+                                            <input type="radio" name="crust1" value="Crispy" >Crispy
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio11">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Stuffed"
+                                            <input type="radio" name="crust2" value="Stuffed"
                                             >Stuffed
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio11">
                                         <label>
-                                            <input type="checkbox" name="Crust" value="Gluten-Free">Gluten-Free
+                                            <input type="radio" name="crust3" value="Gluten-Free">Gluten-Free
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <h3>Size:</h3>
-                                    <div class="checkbox">
+                                    <div class="radio12">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Small">Small
+                                            <input type="radio" name="size1" value="Small">Small
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio12">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Medium">Medium
+                                            <input type="radio" name="size2" value="Medium">Medium
                                         </label>
                                     </div>
-                                    <div class="checkbox">
+                                    <div class="radio12">
                                         <label>
-                                            <input type="checkbox" name="Size" value="Large">Large
+                                            <input type="radio" name="size3" value="Large">Large
                                         </label>
                                     </div>
                                 </div>
@@ -361,6 +386,8 @@
             </div>
             <div id="result" class="text-centre">
                 <button type="submit" name="button" class="btn btn-primary" onclick="calculateTotal();">Checkout</button>
+                <button type="submit" name="button" class="btn btn-primary" onclick="delivery();">Delivery</button>
+                
             </div>
         </body>
     </div>
