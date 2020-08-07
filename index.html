@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PICK A PIZZA!</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <div class="container">
+        <body>
+            <h1 id=heading><strong>Welcome Customer</strong></h1>
+            <div class="jumbotron">
+                <p id="intro-text">Welcome to Pick-A-Pizza!</p>
+                <p id="intro-text2">Place your orders here</p>
+            </div>
+            <div class="flavours">
+            <h2>Flavours we have:</h2>
+            <ol>
+               <li><input type="checkbox" name="Hawaiian" value="Hawaiian" id="hawaiian">Hawaiian</li>
+                <li><input type="checkbox" name="Boerewors" value="Boerewors" id="boerewors">Boerewors</li>
+                <li><input type="checkbox" name="BBQ Steak" value="BBQ" id="bbq">BBQ Steak</li>
+                <li><input type="checkbox" name="Peri-Peri" value="PeriPeri" id="peri-peri">Peri-Peri Chicken</li>
+                <li><input type="checkbox" name="Chicken Tikka" value="ChickenTikka" id=chickentikka>Chicken Tikka</li>
+                <li><input type="checkbox" name="Veg Tikka" value="VegTikka" id="vegtikka">Vegetable Tikka</li>
+            </ol>
+            <div class="row" id="flavours-row">
+                <div class="col-md-2" id="hawaiianInfo">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">Hawaiian</h2>
+                        </div>
+                        <div id="card-body1">
+                            <style>
+                            #card-body1{
+                                background-image: url("Images/hawaiian.jpeg");
+                                background-repeat: no-repeat;
+                                opacity: 0.9;
+                                color:rgb(7, 7, 7);
+                            }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy" >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Medium">Medium
+                                        </label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                       <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" id="boereworsInfo">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">Boerewors</h2>
+                        </div>
+                        <div id="card-body2">
+                            <style>
+                            #card-body2{
+                                background-image: url("Images/boerewors.jpeg");
+                                background-repeat: no-repeat;
+                                color:rgb(7, 7, 7);
+                            }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy"
+                                            >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size2" value="Medium">Medium
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2" id="bbqInfo">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">BBQ Steak</h2>
+                        </div>
+                        <div id="card-body3">
+                            <style>
+                                #card-body3{
+                                    background-image: url('Images/bbq.jpeg');
+                                    background-repeat: no-repeat;
+                                    color:rgb(7, 7, 7);
+                                }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy" >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size2" value="Medium">Medium
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">Peri-Peri</h2>
+                        </div>
+                        <div id="card-body4">
+                            <style>
+                                #card-body4{
+                                    background-image: url('Images/peri.jpeg');
+                                    background-repeat: no-repeat;
+                                    color:rgb(7, 7, 7);
+                                }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy" >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size2" value="Medium">Medium
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">Chicken Tikka</h2>
+                        </div>
+                        <div id="card-body5">
+                            <style>
+                                #card-body5{
+                                    background-image: url('Images/chicken.jpeg');
+                                    background-repeat: no-repeat;
+                                    color:rgb(7, 7, 7);
+                                }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy" >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size2" value="Medium">Medium
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card-info">
+                        <div class="card-heading">
+                            <h2 id="card-title1">Veg Tikka</h2>
+                        </div>
+                        <div id="card-body6">
+                            <style>
+                                #card-body6{
+                                    background-image: url('Images/veg.jpeg');
+                                    background-repeat: no-repeat;
+                                    color:rgb(7, 7, 7);
+                                }
+                            </style>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3>Crust:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust1" value="Crispy" >Crispy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust2" value="Stuffed"
+                                            >Stuffed
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="crust3" value="Gluten-Free">Gluten-Free
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Size:</h3>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size1" value="Small">Small
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="size2" value="Medium">Medium
+                                        </label>
+                                    </div>
+                                    <div class="checkbox12">
+                                        <label>
+                                            <input type="checkbox" name="size3" value="Large">Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="result" class="text-centre">
+                <button type="submit" name="button" class="btn btn-primary" onclick="calculateTotal();">Checkout</button>
+                <button type="submit" name="button" class="btn btn-primary" onclick="delivery();">Delivery</button>
+                
+            </div>
+        </body>
+    </div>
+</html>
