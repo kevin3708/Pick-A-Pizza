@@ -1,20 +1,24 @@
-var flavor
+var flavor, price
    function getFlavors(){
       if(document.getElementById("hawaiian").checked===true){
          flavor="Hawaiian"
+         price=800
       }else if(document.getElementById("boerewors").checked===true){
          flavor="Boerewors"
+         price=750
       }else if(document.getElementById("bbq").checked===true){
          flavor="BBQ"
+         price=800
       }else if(document.getElementById("peri-peri").checked===true){
-         flavor="Peri"
+         flavor="Peri-Peri"
+         price=1000
       }else if(document.getElementById("chickentikka").checked===true){
-         flavor="Chicken"
+         flavor="ChickenTikka"
+         price=1100
       }else if(document.getElementById("vegtikka").checked===true){
-         flavor="Vegetable"
+         flavor="VegetableTikka"
+         price=1200
       }
-      console.log(flavor)
-      return (flavor)
    }
    var crust=function(){
       if(document.getElementsByName("crust1").checked===true){
@@ -35,23 +39,14 @@ var flavor
       }
    }
 function calculateTotal(){
-   if(document.getElementById("hawaiian").checked===true){
-     alert("Total=800")
-   }else if(document.getElementById("boerewors").checked===true){
-      alert("Total=700")
-   }else if(document.getElementById("bbq").checked===true){
-      alert("Total=800")
-   }else if(document.getElementById("peri-peri").checked===true){
-      alert("Total=1000")
-   }else if(document.getElementById("chickentikka").checked===true){
-      alert("Total=800")
-   }else if(document.getElementById("vegtikka").checked===true){
-      alert("Total=900")
-   }
+ var Flavour=getFlavors()
+ alert("You have ordered"+" "+ flavor)
+alert("Your total is"+ price) 
 }
 function delivery(){
    prompt("Enter your current location")
    alert("Your order will be delivered to your current location")
 }
+
 
 
